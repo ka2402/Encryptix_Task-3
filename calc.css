@@ -1,0 +1,66 @@
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; 
+    margin: 0; 
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #333; /* Dark gray background */
+    padding: 20px; /* Padding inside the calculator */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Display area */
+.display {
+    background-color: #222; 
+    color: #fff; /* White text color */
+    font-size: 2em; /* Larger font size */
+    padding: 20px; 
+    text-align: right; /* Right-align text */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for buttons */
+.buttons {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+/* Individual button styles */
+.btn {
+    background-color: #444; 
+    color: #fff; 
+    font-size: 1.5em; /* Medium font size */
+    padding: 20px; /* Padding inside button */
+    border: none; 
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #555; 
+}
+
+/* Button active state */
+.btn:active {
+    background-color: #666; 
+}
+
+/* Spanning specific buttons */
+#equals {
+    grid-column: span 2; /* Spanning 2 columns */
+}
+
+#clear {
+    grid-column: span 2; /* Spanning 2 columns */
+}
